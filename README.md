@@ -1,18 +1,19 @@
 # budayanusantara
 Tulis (sudah) saat sudah menyelesaikan kriteria.
-List TODO Project Capstone
+List TODO Project Capstone 
+# List TODO 
 ----------------------------------------------
-Memiliki setidaknya 5 halaman di seluruh aplikasi web Anda.
-Mengimplementasikan operasi CRUD yang terkait dengan topik Anda.
-Membangun aplikasi web dengan tata letak responsif untuk semua ukuran layar perangkat.
-Mengimplementasikan panggilan jaringan untuk berinteraksi dengan API proyek.
-Menggunakan modul bundler (webpack, Vite, dll.) untuk membangun proyek aplikasi web Anda.
-Membangun API RESTful untuk mendukung fungsionalitas Aplikasi Front-End.
-API RESTful dapat menyimpan data dengan atau tanpa database.
-Membuat API RESTful dengan URL yang dirancang agar sesuai dengan konvensi standar.
-Memastikan implementasi fitur utama yang ingin Anda bahas dalam proyek tanpa menyebabkan aplikasi crash.
-Siswa dilarang menggunakan generator web untuk aplikasi front-end atau back-end.
------------------------------------------------
+Have at least 5 pages throughout your web apps.
+Implement CRUD operations related to your topic.
+Build responsive layout web apps for all device screen sizes.
+Implement networking calls to interact with the project's API.
+Using module bundler (webpack, Vite, etc.) to build your web app project.
+Building RESTful API to support Front-End App functionality.
+The RESTful API can save data with or without a database.
+Creating RESTful APIs with URLs designed to match standard conventions.
+Ensure the implementation of the main features you aim to address in the project without causing the application to crash.
+Students are prohibited from using web generators for front-end or back-end applications.
+
 Recommendation TODO
 -----------------------------------------------
 Mockup aplikasi: buat representasi visual dari desain aplikasi dan antarmuka pengguna.
