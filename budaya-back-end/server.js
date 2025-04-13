@@ -5,7 +5,7 @@ const dataRoutes = require('./routes/index.js');
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 5000,
-    host: 'localhost',
+    host: '0.0.0.0',
   });
 
   const uri = "mongodb+srv://chainsawman1668:kaMenriDe@azzam.c01scxw.mongodb.net/budaya?retryWrites=true&w=majority&appName=Azzam";
