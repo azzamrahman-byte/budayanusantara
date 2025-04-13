@@ -1,9 +1,9 @@
 {
-  "name": "hapi-notes-api",
+  "name": "budaya-back-end",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node budaya-back-end/server.js"
   },
   "keywords": [],
   "author": "",
