@@ -11,10 +11,7 @@ const init = async () => {
   const uri = "mongodb+srv://chainsawman1668:kaMenriDe@azzam.c01scxw.mongodb.net/budaya?retryWrites=true&w=majority&appName=Azzam";
 
   try {
-    await mongoose.connect(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(uri);
     console.log('Connected to MongoDB Atlas');
   } catch (err) {
     console.error('MongoDB connection error:', err.message);
