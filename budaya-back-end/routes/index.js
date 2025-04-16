@@ -15,6 +15,25 @@ module.exports = [
     },
   },
   {
+    method: 'GET',
+    path: '/budaya/{id}',
+    handler: async (request, h) => {
+      try {
+        const { id } = request.params;
+        const data = await Budaya.findById(id);
+
+        if (!data) {
+          return h.response({ status: 'fail', message: 'Data not found' }).code(404);
+        }
+
+        return h.response({ status: 'success', data }).code(200);
+      } catch (err) {
+        console.error(err);
+        return h.response({ status: 'fail', message: 'Failed to fetch data' }).code(500);
+      }
+    },
+  },
+  {
     method: 'POST',
     path: '/budaya',
     handler: async (request, h) => {
