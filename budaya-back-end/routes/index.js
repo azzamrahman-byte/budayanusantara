@@ -35,4 +35,45 @@ module.exports = [
       }
     },
   },
+  {
+    method: 'PUT',
+    path: '/budaya/{id}',
+    handler: async (request, h) => {
+      try {
+        const { id } = request.params;
+        const updates = request.payload;
+
+        const updatedBudaya = await Budaya.findByIdAndUpdate(id, updates, { new: true });
+
+        if (!updatedBudaya) {
+          return h.response({ status: 'fail', message: 'Data not found' }).code(404);
+        }
+
+        return h.response({ status: 'success', data: updatedBudaya }).code(200);
+      } catch (err) {
+        console.error(err);
+        return h.response({ status: 'fail', message: 'Failed to update data' }).code(500);
+      }
+    },
+  },
+  {
+    method: 'DELETE',
+    path: '/budaya/{id}',
+    handler: async (request, h) => {
+      try {
+        const { id } = request.params;
+
+        const deletedBudaya = await Budaya.findByIdAndDelete(id);
+
+        if (!deletedBudaya) {
+          return h.response({ status: 'fail', message: 'Data not found' }).code(404);
+        }
+
+        return h.response({ status: 'success', message: 'Data deleted successfully' }).code(200);
+      } catch (err) {
+        console.error(err);
+        return h.response({ status: 'fail', message: 'Failed to delete data' }).code(500);
+      }
+    },
+  }
 ];
